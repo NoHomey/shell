@@ -10,7 +10,7 @@
 // This implementation relais only to 7 functions: getchar(), malloc(), realloc(), fork(), execv(), waitpid() and perror().
 // And it has it's own parse function that does not relais on functions like: strtok() or any other prebuild ones.
 // Repository for program development can be found at: https://github.com/NoHomey/shell
-// Final product can be found at: https://github.com/NoHomey/ProjectX/blob/master/ProjectX/ProjectX.c
+// Final product can be found at: https://github.com/NoHomey/shell/blob/master/final/shell.c
 // In order to run this program simply type: "make" in command shell (for: linux and unix based platforms only).
 //---------------------------------------------
 
