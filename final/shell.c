@@ -121,14 +121,14 @@ int  main (void)
 				flag = 1;	//Set flag.				
 			if((byte == '\n') && (flag == 1))	//If read byte is new line and flag is 1 than terminate futer string, pass buffered memmory for parsing it, try to execute command from that string and reset index in order to start fresh if there are more command lines. 
 			{
-				holder = index;
-				index = holder - 2;
-				while(command_line[index] == ' ')
+				holder = index;	//Hold index value.
+				index = holder - 2;	//Decreaste index to point before '\n' symbol.
+				while(command_line[index] == ' ')	//While there are ' ' before '\n' replace them with '\n'.
 				{
-					command_line[index] = '\n';
-					holder = index + 1;
-					index--;
-				}
+					command_line[index] = '\n';	//Replace ' ' with '\n'.
+					holder = index + 1;	//Make holder point one afther first '\n'.
+					index--;	//Decrement index.
+				}	//Process of replacing ' ' won't affect program behavior since all loops loop until '\0' is found and '\0' is added at rigth place.
 
 				command_line[holder] = '\0';	//Terminate futer string.
 				args = parse_cmdline(command_line);	//Parse that string.
