@@ -1,2 +1,4 @@
 # shell
-Simple shell implemntaion process
+Simple shell implemntaion.
+
+# oficial release can be found at: final/shell.c !
